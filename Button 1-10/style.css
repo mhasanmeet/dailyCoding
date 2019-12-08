@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: #736373;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------- Button 01 -----------------*/
+.btn{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 2px solid #33d9b2;
+    color: #33d9b2;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*----------- Button 02 -----------------*/
+
+
+.btn2{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 2px solid #33d9b2;
+    color: #33d9b2;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.btn2::before, .btn2::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: #736373;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.btn2::before{
+    top: -2px;
+    left: 10%;
+}
+
+.btn2::after{
+    bottom: -2px;
+    right: 10%;
+}
+
+.btn2:hover::before{
+    left: 80%;
+    transition: 1s ease;
+}
+
+.btn2:hover::after{
+    right: 80%;
+    transition: 1s ease;
+}
+
+/*----------- Button 03 -----------------*/
