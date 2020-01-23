@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 0; */
+    border-bottom: 1px dotted #333;
+}
+
+section .content{
+    text-align: center;
+}
+
+section .content h2{
+    /* margin-bottom: 20px; */
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1em;
+    
+}
+
+section .content p{
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid red;
+    text-decoration: none;
+    color: #0e6906;
+    margin-top: 20px;
+    /* text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+    text-decoration-color: green; */
+}
+
+/* --------------------------------------------------- */
+
+section .content h2{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+}
+
+section:nth-child(1) .content h2{
+    /* transform: rotate(-4deg); */
+    background-image: url(./img.jpg);
+    background-size: cover;
+    /* text-shadow: 2px 2px 5px red; */
+    
+}
+section:nth-child(2) .content h2{
+    /* transform: rotate(4deg); */
+    background-image: url(./fire.jpg);
+    background-size: cover;
+    text-shadow: 0 3px 4px 2px;
+}
+section:nth-child(3) .content h2{
+    /* transform: rotate(4deg) skewX(20deg); */
+    background-image: url(.//red.jpg);
+    background-size: cover;
+    text-shadow: 0 3px 4px 2px;
+}
+section:nth-child(4) .content h2{
+    /* transform: rotate(4deg) skewy(-10deg); */
+    background-image: url(./sparkle.jpg);
+    background-size: cover;
+    text-shadow: 0 3px 4px 2px;
+}
+
+/* -------------------------------------------- */
+
+section .content p{
+    background-color: #3333;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
