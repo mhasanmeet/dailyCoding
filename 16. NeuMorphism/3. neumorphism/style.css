@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #00002f, #000077);
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #00002f, #000077);
+    box-shadow: 28px 28px 77px #00002f, 
+               -28px -28px 77px #000077;
+}
+
+.box:hover{
+    transition: 0.5s;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #dcdce6, #ffffff);
+    box-shadow: 28px 28px 77px #43437e, 
+               -28px -28px 77px #464692;
+}
